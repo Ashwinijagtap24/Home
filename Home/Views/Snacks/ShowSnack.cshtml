@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "ShowSnack";
+}
+
+<h1>ShowSnack</h1>
+<hr />
+<table class="table">
+    <tr>
+        <th>Customer Name</th>
+        <td>@ViewBag.Name</td>
+    </tr>
+    <tr>
+        <th>Customer Mobile Number</th>
+        <td>@ViewBag.Mobile</td>
+    </tr>
+    <tr>
+        <th>Snacks</th>
+        <td>
+            @foreach (String s in ViewBag.Snack)
+            {
+                <p>
+                    @s
+                </p>
+            }
+        </td>
+    </tr>
+
+</table>

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "CustomerDetails";
+}
+<h1>CustomerDetails</h1>
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Enter Name</label>
+        @Html.TextBox("cname")
+    </div>
+        <div class="mb-3">
+        <label>Enter Mobile Number</label>
+        @Html.TextBox("mobile")
+    </div> 
+    
+    <div class="mb-3">
+    <label>Select Snacks</label>
+    <input type="checkbox" name="Snacks" value="Pohe"/> Pohe
+    <input type="checkbox" name="Snacks" value="Chaat"/> Chaat
+    <input type="checkbox" name="Snacks" value="Aloo tikki"/> Aloo tikki
+    </div>
+
+    <div class="mb-3">
+        <input type="submit" value="Save" />
+    </div>
+
+
+}
+
+
+

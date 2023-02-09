@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+}
+@using(Html.BeginForm()){
+
+<h1>Show</h1>
+<table class="table">
+    <tr>
+    <th>Employee Id</th>
+    <td>@ViewBag.Id </td>
+    </tr>
+    <tr>
+        <th>Employee Name</th>
+        <td>@Html.TextBox("@ViewBag.Name") </td>
+    </tr>
+    <tr>
+        <th>Employee Mobile</th>
+        <td>@ViewBag.Mobile </td>
+    </tr>
+    <tr>
+        <th>Employee Salary</th>
+        <td>@ViewBag.Salary</td>
+    </tr>
+    
+
+</table>
+}
